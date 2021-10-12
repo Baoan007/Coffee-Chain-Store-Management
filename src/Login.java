@@ -63,52 +63,57 @@ public class Login extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JLabel lblTnngNhp = new JLabel("T\u00EAn \u0111\u0103ng nh\u1EADp:");
 		lblTnngNhp.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblTnngNhp.setAlignmentX(Component.CENTER_ALIGNMENT);
 		lblTnngNhp.setSize(new Dimension(1, 1));
 		lblTnngNhp.setBounds(158, 98, 114, 23);
 		contentPane.add(lblTnngNhp);
-		
+
 		textFieldId = new JTextField();
 		textFieldId.setBounds(282, 100, 137, 23);
 		contentPane.add(textFieldId);
 		textFieldId.setColumns(10);
-		
+
 		lblMtKhu = new JLabel("M\u1EADt kh\u1EA9u:");
 		lblMtKhu.setFont(new Font("Tahoma", Font.BOLD, 14));
 		lblMtKhu.setBounds(158, 135, 82, 21);
 		contentPane.add(lblMtKhu);
-		
+
 		JButton btnThoat = new JButton("Tho\u00E1t");
 		btnThoat.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+//				System.exit(0);
 			}
 		});
 		btnThoat.setBounds(319, 199, 88, 23);
 		contentPane.add(btnThoat);
-		
-		JButton bntDangNhap = new JButton("\u0110\u0103ng nh\u1EADp");
-		bntDangNhap.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {			
-			}
-		});
-		bntDangNhap.setBounds(188, 199, 101, 23);
-		contentPane.add(bntDangNhap);
-		
+
+		JButton btnDangNhap = new JButton("\u0110\u0103ng nh\u1EADp");
+
+		btnDangNhap.setBounds(188, 199, 101, 23);
+		contentPane.add(btnDangNhap);
+
 		JLabel lblNewLabel = new JLabel("Quy\u1EC1n truy c\u1EADp:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblNewLabel.setBounds(158, 38, 114, 30);
+		lblNewLabel.setBounds(156, 38, 116, 30);
 		contentPane.add(lblNewLabel);
-		
+
 		textFieldPassword = new JPasswordField();
 		textFieldPassword.setBounds(282, 135, 137, 24);
 		contentPane.add(textFieldPassword);
-		
+
 		JComboBox boxQuyentruycap = new JComboBox();
-		boxQuyentruycap.setModel(new DefaultComboBoxModel(new String[] {"Nh\u00E2n vi\u00EAn", "Qu\u1EA3n l\u00FD"}));
-		boxQuyentruycap.setBounds(282, 43, 94, 24);
+		boxQuyentruycap.setModel(new DefaultComboBoxModel(
+				new String[] { "Ch\u1ECDn ch\u1EE9c v\u1EE5", "Nh\u00E2n vi\u00EAn", "Qu\u1EA3n l\u00FD" }));
+		boxQuyentruycap.setBounds(282, 43, 108, 24);
 		contentPane.add(boxQuyentruycap);
+
+		btnDangNhap.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		});
 	}
 }

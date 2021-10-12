@@ -14,7 +14,6 @@ import javax.swing.border.LineBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-
 public class CuaHang extends JFrame {
 
 	/**
@@ -53,7 +52,7 @@ public class CuaHang extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JButton btnThucUong = new JButton("Qu\u1EA3n l\u00FD th\u1EE9c u\u1ED1ng");
 		btnThucUong.setIcon(null);
 		btnThucUong.setBorder(new LineBorder(new Color(0, 0, 0)));
@@ -62,14 +61,14 @@ public class CuaHang extends JFrame {
 		btnThucUong.setForeground(SystemColor.inactiveCaptionBorder);
 		btnThucUong.setBounds(28, 82, 161, 75);
 		contentPane.add(btnThucUong);
-		
+
 		JLabel lblNewLabel = new JLabel("C\u1EEDa h\u00E0ng cafe");
 		lblNewLabel.setForeground(Color.RED);
 		lblNewLabel.setBackground(SystemColor.inactiveCaptionBorder);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 26));
 		lblNewLabel.setBounds(183, 11, 170, 46);
 		contentPane.add(lblNewLabel);
-		
+
 		JButton btnQuanLyns = new JButton("Qu\u1EA3n l\u00FD nh\u00E2n s\u1EF1");
 		btnQuanLyns.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnQuanLyns.setForeground(Color.WHITE);
@@ -77,7 +76,7 @@ public class CuaHang extends JFrame {
 		btnQuanLyns.setBackground(SystemColor.textHighlight);
 		btnQuanLyns.setBounds(199, 82, 149, 75);
 		contentPane.add(btnQuanLyns);
-		
+
 		JButton btnThongKe = new JButton("Th\u1ED1ng k\u00EA");
 		btnThongKe.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnThongKe.setForeground(Color.WHITE);
@@ -85,7 +84,7 @@ public class CuaHang extends JFrame {
 		btnThongKe.setBackground(SystemColor.textHighlight);
 		btnThongKe.setBounds(363, 82, 143, 75);
 		contentPane.add(btnThongKe);
-		
+
 		JButton btnBanHang = new JButton("B\u00E1n h\u00E0ng");
 		btnBanHang.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -97,7 +96,7 @@ public class CuaHang extends JFrame {
 		btnBanHang.setBackground(SystemColor.textHighlight);
 		btnBanHang.setBounds(28, 182, 161, 69);
 		contentPane.add(btnBanHang);
-		
+
 		JButton btnDatBan = new JButton("\u0110\u1EB7t b\u00E0n");
 		btnDatBan.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnDatBan.setForeground(Color.WHITE);
@@ -105,7 +104,7 @@ public class CuaHang extends JFrame {
 		btnDatBan.setBackground(SystemColor.textHighlight);
 		btnDatBan.setBounds(199, 182, 149, 69);
 		contentPane.add(btnDatBan);
-		
+
 		JButton btnThongTin = new JButton("Th\u00F4ng tin");
 		btnThongTin.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnThongTin.setForeground(Color.WHITE);
@@ -113,16 +112,26 @@ public class CuaHang extends JFrame {
 		btnThongTin.setBackground(SystemColor.textHighlight);
 		btnThongTin.setBounds(363, 182, 143, 69);
 		contentPane.add(btnThongTin);
-		
+
 		JButton btnThoat = new JButton("Tho\u00E1t");
+		btnThoat.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+//				System.exit(0);
+			}
+		});
 		btnThoat.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnThoat.setForeground(Color.BLUE);
 		btnThoat.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnThoat.setBackground(new Color(245, 245, 245));
 		btnThoat.setBounds(312, 302, 84, 32);
 		contentPane.add(btnThoat);
-		
+
 		JButton btnDangXuat = new JButton("\u0110\u0103ng xu\u1EA5t");
+		btnDangXuat.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnDangXuat.setBorder(new LineBorder(new Color(0, 0, 0)));
 		btnDangXuat.setForeground(Color.BLUE);
 		btnDangXuat.setFont(new Font("Tahoma", Font.BOLD, 12));
